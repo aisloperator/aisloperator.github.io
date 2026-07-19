@@ -422,11 +422,10 @@ body {
 .carousel-track {
   display: flex;
   gap: 24px;
-  padding: 0 max(28px, calc((100vw - 1120px) / 2));
 }
 
 .gallery-card {
-  flex: 0 0 480px;
+  flex: 0 0 min(480px, 100%);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
