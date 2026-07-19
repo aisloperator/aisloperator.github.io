@@ -411,21 +411,17 @@ body {
 }
 
 .carousel-track-wrap {
-  overflow-x: auto;
-  overflow-y: visible;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
   padding: 8px 0 24px;
 }
-.carousel-track-wrap::-webkit-scrollbar { display: none; }
 
 .carousel-track {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .gallery-card {
-  flex: 0 0 min(480px, 100%);
+  flex: 0 1 480px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
