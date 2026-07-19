@@ -7,6 +7,8 @@
   padding: 0;
 }
 
+img { max-width: 100%; display: block; }
+
 :root {
   --bg:          #05050d;
   --surface:     #0c0c18;
@@ -362,8 +364,8 @@ body {
 }
 
 .about-avatar {
-  width: 120px;
-  height: 120px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -739,8 +741,8 @@ footer {
   }
 
   .about-avatar {
-    width: 80px;
-    height: 80px;
+    width: 56px;
+    height: 56px;
   }
 
   .about-stats {
