@@ -80,7 +80,6 @@
   const phrases = [
     'ai-generated software packages.',
     'human-curated. machine-built.',
-    'open source. openly artificial.',
     'patterns for the post-AI era.',
     'crafted with intent. written by AI.',
   ];
