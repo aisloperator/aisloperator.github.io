@@ -205,13 +205,6 @@
           new Date(b.updated_at) - new Date(a.updated_at)
         );
 
-      const totalStars = all.reduce((s, r) => s + r.stargazers_count, 0);
-      const statRepos = document.getElementById('stat-repos');
-      const statStars = document.getElementById('stat-stars');
-      if (statRepos) statRepos.textContent = repos.length;
-      if (statStars) statStars.textContent =
-        totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` : totalStars;
-
       if (repos.length === 0) {
         grid.innerHTML = `<div class="empty-state">
           <h3>// no packages yet</h3>
