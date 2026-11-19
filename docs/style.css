@@ -104,32 +104,29 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 12px;
 }
 
 .nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 15px;
   color: #a8afc0;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 400;
-  transition: color var(--ease);
-}
-.nav-links a:hover { color: var(--text); }
-
-.nav-github {
-  display: flex !important;
-  align-items: center;
-  gap: 7px;
+  line-height: 1;
   border: 1px solid rgba(168, 175, 192, 0.3);
-  padding: 7px 15px;
   border-radius: 6px;
-  transition: background var(--ease), border-color var(--ease), box-shadow var(--ease) !important;
+  transition: color var(--ease), background var(--ease), border-color var(--ease), box-shadow var(--ease);
 }
-.nav-github:hover {
-  color: var(--text) !important;
-  background: var(--accent-dim) !important;
-  border-color: var(--accent) !important;
-  box-shadow: var(--accent-glow) !important;
+.nav-links a:hover {
+  color: var(--text);
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  box-shadow: var(--accent-glow);
 }
 
 /* ═══════════════════════════════════════════
@@ -700,6 +697,9 @@ footer {
    Responsive
 ═══════════════════════════════════════════ */
 @media (max-width: 800px) {
+  .nav-links { gap: 8px; }
+  .nav-links a { padding: 0 11px; }
+
   .about-avatar {
     width: 56px;
     height: 56px;
